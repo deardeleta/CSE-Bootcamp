@@ -1,0 +1,229 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+.background-color {
+    background-color: #87CEFA;
+}
+
+/* Outer header takes full width and centers content */
+.header {
+  width: 100%;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Inner content: logo and text side by side */
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Logo styles */
+.logo img {
+  height: 80px;
+  width: auto;
+}
+
+/* Company info styles */
+.tagline {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 300px; /* ✅ fixed width to match both lines */
+}
+
+/* Title and tagline */
+.tagline h1 {
+  font-size: 32px;
+  margin: 0;
+  text-align: left;
+}
+
+.tagline h2 {
+  font-size: 16px;
+  margin: 0;
+  text-align: left;
+}
+
+.parameter
+{
+margin: 1rem auto;         /* vertical and horizontal margin */
+max-width: 70%; 
+
+}
+
+body 
+{
+  font-family: 'Fredoka', sans-serif;
+}
+
+/* Sticky top navbar */
+.navbar {
+  position: sticky;
+  top: 0;
+  background-color: #FFFACD; /* navbar background */
+  padding: 1rem;
+  z-index: 1000;             /* keeps navbar above other content */
+
+    /* 👇 Rounded edges and spacing */
+    border-radius: 12px;
+    margin: 1rem auto;         /* vertical and horizontal margin */
+    max-width: 70%;            /* prevents it from touching the edges */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* optional: adds subtle shadow */
+  }
+  
+
+  /* Sticky bottom navbar */
+  .navbar-bottom {
+    position: sticky;
+    bottom: 0;                  /* 👈 stick to bottom instead of top */
+    background-color: #FFFACD;
+    padding: 1rem;
+    z-index: 1000;
+    border-radius: 12px;
+    margin: 1rem auto;
+    max-width: 70%;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.1); /* subtle shadow on top */
+  }
+  
+
+/* Nav list styles */
+.nav-list {
+  list-style: none;
+  display: flex;
+  justify-content: center; /* center align nav items */
+  gap: 2rem;               /* evenly spaced */
+  margin: 0;
+  padding: 0;
+}
+
+/* Nav link styles */
+.nav-list a {
+  text-decoration: none;
+  color: #FF6347;            /* text color */
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-list a:hover {
+  color: #2F4F4F;          /* text color on hover */
+}
+
+.section-1 h2 
+{
+  font-size: 28px;
+}
+
+
+
+.map img {
+  height: 300px;
+  width: auto;
+  border-radius: 12px;
+}
+
+.column
+{
+  display: flex; 
+  flex-direction: column;
+  max-width: 40%;
+  align-items: left;
+}
+
+.section-1
+{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+}
+
+.container-1
+{
+  background-color: #ebeae5; /* navbar background */
+  padding: 1rem;
+  border-radius: 12px;
+}
+
+.fun
+{
+  text-align: center;
+}
+
+.cool
+{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  
+}
+
+.table-wrapper {
+  border-radius: 12px;
+  overflow: hidden;               /* 👈 this is key for clipping corners */
+  display: inline-block;          /* optional: shrink to fit content */
+  background-color: transparent;  /* lets the cell gaps show the site background */
+}
+
+.styled-table {
+  border-collapse: separate;
+  border-spacing: 2px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.styled-table thead tr {
+  background-color: teal;
+  color: white;
+}
+
+.styled-table tbody tr {
+  background-color: #ebeae5;
+  color: #333;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.fun
+{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  text-align: left;
+}
+
+  .photo-row {
+    display: flex;
+    justify-content: space-between;   /* evenly spaced */
+    flex-wrap: wrap;                  /* allows wrapping if screen gets narrow */
+    gap: 16px;                        /* spacing between photos */
+    padding: 20px;
+  }
+  
+  .photo-row figure {
+    flex: 1 1 calc(25% - 16px);       /* 4 items in a row with gaps accounted for */
+    margin: 0;
+    text-align: center;
+  }
+  
+  .photo-row img {
+    width: 100%;                      /* scales image to figure width */
+    height: auto;                     /* keeps aspect ratio */
+    display: block;
+    border-radius: 8px;               /* optional: round corners */
+    object-fit: cover;                /* crops nicely if needed */
+  }
+  

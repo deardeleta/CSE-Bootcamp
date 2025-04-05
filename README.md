@@ -1,1 +1,1 @@
-http://deardeleta.github.io/cse-bootcamp/
+https://deardeleta.github.io/CSE-Bootcamp/

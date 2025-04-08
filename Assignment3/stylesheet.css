@@ -30,7 +30,6 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 10px;
   flex: 1; /* fills remaining space next to menu */
-  filter: drop-shadow(5px 5px rgb(156, 184, 168));
 }
 
 .grid-item {

@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Petal & Post</title>
+  <link rel="stylesheet" href="stylesheet.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="bg-color">
+  
+  <!--Logo-->
+  <div class="logo">
+  <img src="images/petal-post-logo.png" alt="petal-post-logo">
+</div>
+
+  <!--Navbar-->
+  <div class="navbar">
+    <ul class="navlist">
+      <li>Shop</li>
+      <li>About</li>
+      <li>Contact</li>
+      <li>Cart</li>
+    </ul>
+
+    </div>
+
+  <!--Banner Slider-->
+    <div class="banner-text">
+      <p>Free shipping on orders $75 or more</p>
+    </div>
+
+  
+  
+  <!--Hero Image-->
+<!-- Hero Slideshow -->
+<div class="hero-slideshow">
+
+  <div class="slide hero-image1">
+    <div class="hero-text">
+      <h1>Delivering Thoughtful Blooms</h1>
+      <p>Curated Bouquets. Straight to Your Door.</p>
+      <button>Build Your Bouquet</button>
+    </div>
+  </div>
+
+  <div class="slide hero-image2">
+    <div class="hero-text">
+      <h1>Delivering Thoughtful Blooms</h1>
+      <p>Curated Bouquets. Straight to Your Door.</p>
+      <button>Build Your Bouquet</button>
+    </div>
+  </div>
+
+  <div class="slide hero-image3">
+    <div class="hero-text">
+      <h1>Delivering Thoughtful Blooms</h1>
+      <p>Curated Bouquets. Straight to Your Door.</p>
+      <button>Build Your Bouquet</button>
+    </div>
+  </div>
+
+</div>
+
+<!--All Products-->  
+<div class="product-grid">
+  <!--Single Item Row-->
+  <div class="row">
+    <div class="product" onclick="openModal('images/single1.jpg', 'Daisy', 'A cheerful bloom bursting with vibrant color and sunlit charm.', '$4.50')">
+  <img src="images/single1.jpg" alt="single1">
+  <p class="product-title">Daisy</p>
+  <p>A cheerful bloom bursting with vibrant color and sunlit charm.</p>
+  <p class="price">$4.50</p>
+  <button>Add to Cart</button>
+  </div>
+
+  <div class="product" onclick="openModal('images/single2.jpg', 'Peony', 'Lush, romantic layers that unfold with soft elegance and sweet fragrance.', '$8.50')">
+  <img src="images/single2.jpg" alt="single2">
+  <p class="product-title">Peony</p>
+  <p>Lush, romantic layers that unfold with soft elegance and sweet fragrance.</p>
+  <p>$8.50</p>
+  <button>Add to Cart</button>
+  </div>
+
+  <div class="product" onclick="openModal('images/single3.jpg', 'Rose', 'Timeless and classic, symbolizing love with every velvety petal.', '$6.50')">
+  <img src="images/single3.jpg" alt="single3">
+  <p class="product-title">Rose</p>
+  <p>Timeless and classic, symbolizing love with every velvety petal.</p>
+  <p>$6.50</p>
+  <button>Add to Cart</button>
+  </div> 
+  </div>
+
+  <!--Bouquet Row-->
+  <div class="row bouq-row" >
+
+    <div class="product" onclick="openModal('images/bouq1.jpg', 'Petite Posy', 'A sweet, smaller arrangement — perfect for thoughtful gestures, desks, or bedside tables.', '$29')">
+  <img src="images/bouq1.jpg" alt="bouq1">
+  <p class="product-title">Petite Posy</p>
+  <p>A sweet, smaller arrangement — perfect for thoughtful gestures, desks, or bedside tables.</p>
+  <p>$29</p>
+  <button>Add to Cart</button>
+</div>
+
+  <div class="product" onclick="openModal('images/bouq2.jpg', 'Gathered Grace', 'A medium bouquet of hand-selected blooms, artfully arranged to brighten any room with charm.', '$39')">
+  <img src="images/bouq2.jpg" alt="bouq2">
+  <p class="product-title">Gathered Grace</p>
+  <p>A medium bouquet of hand-selected blooms, artfully arranged to brighten any room with charm.</p>
+  <p>$39</p>
+  <button>Add to Cart</button>
+</div>
+
+  <div class="product" onclick="openModal('images/bouq3.jpg', 'Abundant Bloom', 'Our grandest bouquet — lush, full, and unforgettable, ideal for celebrations or making a lasting impression.', '$49')">
+  <img src="images/bouq3.jpg" alt="bouq3">
+  <p class="product-title">Abundant Bloom</p>
+  <p>Our grandest bouquet — lush, full, and unforgettable, ideal for celebrations or making a lasting impression.</p>
+  <p>$49</p>
+  <button>Add to Cart</button>
+</div>
+
+ </div>
+</div>
+
+<!--Modal-->
+
+<div id="modal" class="modal">
+  <div class="modal-box">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h2>It's in the bag!</h2>
+    <img id="modal-img" src="" alt="">
+    <p class="product-title" id="modal-title"></p>
+    <p id="modal-description"></p>
+    <p class="price" id="modal-price"></p>
+  </div>
+</div>
+
+
+  <div class="footer">
+  <!--Footer-->
+
+  <div class="footer-links">
+  <ul>
+    <li class="list-title">HELP</li>
+    <li>Customer Service</li>
+    <li>Live Chat</li>
+  </ul>
+
+  <ul>
+    <li class="list-title">ACCOUNT</li>
+    <li>Your Account</li>
+    <li>Order Status</li>
+  </ul>
+
+  <ul>
+    <li class="list-title">SUBSCRIBE</li>
+    <li>Email</li>
+    <li>Store Offers and Events</li>
+  </ul>
+
+  <ul>
+    <li class="list-title">THE MEMBER CARD</li>
+    <li>Learn More</li>
+    <li>Pay My Bill</li>
+  </ul>
+</div>
+
+<hr>
+<div class="social-container">
+
+<p><b>CONNECT WITH PETAL & POST</b></p>
+
+  <!--Social Media Icons-->
+  <div class="socials">
+  <a href="https://www.facebook.com" target="_blank"><img src="images/fb-logo.png" alt="fb-logo"></a>
+  <a href="https://www.instagram.com" target="_blank"><img src="images/ig-logo.png" alt="ig-logo"></a>
+  <a href="https://www.twitter.com" target="_blank"><img src="images/x-logo.png" alt="x-logo"></a>
+<a href="https://www.pinterest.com" target="_blank"><img src="images/pin-logo.png" alt="pin-logo"></a>
+  </div>
+
+  </div>
+
+  <div class="copyright">
+<p>&copy; 2025 Petal & Post by <b>Deleta Akram</b> All Rights Reserved.</p> 
+<p><b>NOTE</b>: This website is a template to create a sales website. All informations and materials used are for educational purposes <b>only</b>.</p>
+</div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+
+</html>

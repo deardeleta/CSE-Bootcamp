@@ -1,0 +1,147 @@
+
+/* Fonts */
+h1 {
+  font-family: 'Libre Baskerville', serif;
+}
+
+body, p {
+  font-family: 'Source Sans Pro', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container */
+.main-container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+/* Background Image */
+.photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Clock Base */
+.clock {
+  height: 300px;
+  position: absolute;
+  left: 150px;
+  top: 50px;
+}
+
+/* Clock Hands */
+.rotate-minute {
+  position: absolute;
+  width: 120px;
+  height: 9px;
+  left: 298px;
+  top: 195px;
+  transform-origin: left center;
+  transform: rotate(-89deg);
+  animation: rotate-minute 10s linear forwards;
+}
+
+.rotate-hour {
+  position: absolute;
+  width: 90px;
+  left: 298px;
+  top: 195px;
+  transform-origin: left center;
+  animation: rotate-hour 10s linear forwards;
+}
+
+/* Clock Hand Animations */
+@keyframes rotate-minute {
+  from {
+    rotate: -1deg;
+  }
+  to {
+    rotate: 360deg;
+  }
+}
+
+@keyframes rotate-hour {
+  from {
+    rotate: 0deg;
+  }
+  to {
+    rotate: 30deg;
+  }
+}
+
+/* Message Box */
+.message {
+  position: absolute;
+  background-color: whitesmoke;
+  opacity: 0; /* Initially hidden */
+
+  padding: 20px;
+  width: 90%;
+  max-width: 600px;
+  box-sizing: border-box;
+  left: 566px;
+  top: 480px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-left: 4px solid goldenrod;
+  animation: fade-in 1s ease-in forwards;
+  animation-delay: 9s; /* Appears right when the clock hits 4 */
+}
+
+.message h3 {
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+}
+
+.message p {
+  line-height: 1.6;
+  font-size: 1rem;
+  margin-bottom: 15px;
+}
+
+.message button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message button:hover {
+  background-color: #333;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 0.9; /* Match the final opacity in your styling */
+  }
+}
+
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .message {
+    left: 5%;
+    right: 5%;
+    width: auto;
+    max-width: 90%;
+    top: auto;
+    bottom: 20px;
+  }
+}

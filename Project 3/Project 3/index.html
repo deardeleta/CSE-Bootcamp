@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+  <title>Guess My Number</title>
+</head>
+<body>
+
+  <div class="main-contain">
+    <h1>Guess My Number</h1>
+    <p>Guess the number between 1 and 100</p>
+  </div>
+
+  <div class="container-1">
+
+    <div class="scores">
+      <h3>High Score</h3>
+      <p id="high-score">0</p>
+      <h3>Score</h3>
+      <p id="current-score">10</p>
+
+      <div class="reset">
+        <button>Reset</button>
+      </div>
+    </div>
+
+    <div class="container-2">
+      <img src="" alt="" />
+      <p class="input-label" id="input-label">Guess a number</p>
+      <input type="text" placeholder="Num" id="guess" />
+      <button onclick="play()" id="my-btn">Guess</button>
+      <p id="message"></p>
+    </div>
+
+    <div class="container-3">
+      <p id="history" class="guess-history-label">Guess History</p>
+    </div>
+
+  </div>
+
+  <script src="guess.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+
+</body>
+</html>

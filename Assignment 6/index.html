@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 6</title>
+</head>
+<body>
+  <div>
+<h3>Compare BMI</h3>
+<input type="text" class="lucas_weight" id="lucas_weight"> Enter Lucas' Weight
+<br>
+<input type="text" class="lucas_height" id="lucas_height"> Enter Lucas' Height
+<br>
+<input type="text" class="peter_weight" id="peter_weight"> Enter Peter's Weight
+<br>
+<input type="text" class="peter_height" id="peter_height"> Enter Peter's Height
+<br>
+<button onclick="play()" id="my-btn">Compare</button>
+
+<p class="message" id="message"></p>
+</div>
+
+<div>
+  <h2>Temperature Converter</h2>
+
+  <label>
+    Celsius: 
+    <input type="text" id="celsiusInput">
+  </label>
+  <button onclick="convertCelsius()">Convert to Fahrenheit</button>
+
+  <br><br>
+
+  <label>
+    Fahrenheit: 
+    <input type="text" id="fahrenheitInput">
+  </label>
+  <button onclick="convertFahrenheit()">Convert to Celsius</button>
+
+  <p id="result"></p>
+
+</div>
+
+<div>
+  <h2>Compare BMI (Lucas vs Peter)</h2>
+
+  <label>Lucas' Weight (kg): 
+    <input type="text" id="inputLucasWeight">
+  </label><br>
+
+  <label>Lucas' Height (m): 
+    <input type="text" id="inputLucasHeight">
+  </label><br><br>
+
+  <label>Peter's Weight (kg): 
+    <input type="text" id="inputPeterWeight">
+  </label><br>
+
+  <label>Peter's Height (m): 
+    <input type="text" id="inputPeterHeight">
+  </label><br><br>
+
+  <button onclick="runBMICheck()">Compare BMI</button>
+
+
+</div>
+<h2>Convert Temperatures</h2>
+
+  <label>
+    Celsius Temperature: 
+    <input type="text" id="tempCInput">
+  </label>
+  <button onclick="handleCToF()">Convert to Fahrenheit</button>
+
+  <br><br>
+
+  <label>
+    Fahrenheit Temperature: 
+    <input type="text" id="tempFInput">
+  </label>
+  <button onclick="handleFToC()">Convert to Celsius</button>
+
+  <p>Open your browser console to view the result.</p>
+
+<div>
+  
+</div>
+
+  <script src="assignment6.js"></script>
+</body>
+</html>
